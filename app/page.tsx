@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-linear-to-b from-amber-50 to-orange-50">
-      <header className="bg-amber-800 text-white py-8 shadow-lg">
+      <Navbar />
+      <header className="bg-amber-800 text-white py-8 shadow-lg pt-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center">
             ЈАЗАВИЧАРИ – МАЛИ ПАС ВЕЛИКОГ СРЦА
@@ -182,6 +184,39 @@ export default function Home() {
                 allowFullScreen
                 loading="lazy"
               ></iframe>
+            </div>
+          </div>
+        </section>
+        <section id="kontakt" className="mb-16 bg-white rounded-lg shadow-md p-8">
+          <h2 className="text-3xl font-bold text-amber-800 mb-6 flex items-center gap-2">
+            📬 КОНТАКТ
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Уколико имате питања о јазавичарима или желите да нас контактирате, можете то учинити путем следећих информација:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <span className="text-amber-700 text-xl mt-0.5">📧</span>
+                <div>
+                  <h3 className="font-semibold text-amber-800">Е-пошта</h3>
+                  <a href="mailto:info@jazavicari.rs" className="text-gray-700 hover:text-amber-700 transition-colors">ilijabrankovic88@gmail.com</a>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-amber-700 text-xl mt-0.5">📞</span>
+                <div>
+                  <h3 className="font-semibold text-amber-800">Телефон</h3>
+                  <a href="tel:+381601234567" className="text-gray-700 hover:text-amber-700 transition-colors">+381 66 805 1015</a>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-amber-700 text-xl mt-0.5">📍</span>
+                <div>
+                  <h3 className="font-semibold text-amber-800">Локација</h3>
+                  <p className="text-gray-700">Ниш, Србија</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
